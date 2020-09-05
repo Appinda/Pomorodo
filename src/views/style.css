@@ -1,0 +1,32 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+  background-color: #ffaeae;
+  height: 0vh;
+  width: 100vw;
+  margin-top: auto;
+  transition: height 400ms cubic-bezier(.17,.67,.45,.97);
+  overflow: hidden;
+  padding: 1rem;
+}
+.content.expanded {
+  height: 100vh;
+}

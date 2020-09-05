@@ -5,9 +5,7 @@ function createWindow () {
 
   const targetScreen = screen.getPrimaryDisplay().workAreaSize;
   const [winWidth, winHeight] = [350, 600];
-
-  console.log(winWidth);
-
+  
   const win = new BrowserWindow({
     width: winWidth,
     height: winHeight,
@@ -17,6 +15,7 @@ function createWindow () {
     resizable: false,
     show: false,
     alwaysOnTop: true,
+    transparent: true,
     webPreferences: {
       nodeIntegration: true
     }

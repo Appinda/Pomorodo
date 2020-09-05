@@ -1,0 +1,3 @@
+$(() => {
+  $('.content').addClass('expanded');
+});
